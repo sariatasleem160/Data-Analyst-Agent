@@ -1,7 +1,6 @@
-# Project 4 — Data Analyst Agent
+# Data Analyst Agent
 
 A CSV analysis agent that lets you **chat with data** safely. Upload a CSV, ask questions in plain English, and the agent uses a fixed set of safe tools — never arbitrary code.
-
 ## Why this matters
 
 Many teams want "chat with data," but naive systems are risky. This project separates **deciding** (the model) from **executing** (your code):
@@ -15,7 +14,6 @@ That separation is the **safety model**.
 ## Quick start
 
 ```bash
-cd 04-data-analyst-agent
 python -m venv .venv
 .venv\Scripts\activate        # Windows
 pip install -r requirements.txt
@@ -131,7 +129,7 @@ flowchart TB
 ## File structure
 
 ```
-04-data-analyst-agent/
+Data-Analyst-Agent/
 ├── data/                  # Sample CSV
 ├── tools.py               # Safe tool implementations
 ├── tool_schemas.py        # Tool JSON schemas
@@ -174,18 +172,6 @@ Run `python injection_tests.py` (offline) first. The `--live` flag tests against
 ### Charts not showing
 
 Charts save to `results/charts/`. Ensure the directory exists and `make_chart` was called (check trace).
-
-## What you learn
-
-- Function/tool schemas and structured tool calling
-- Agent loops with step and cost limits
-- Planning before execution
-- Visible execution traces
-- Memory through embeddings
-- MCP server integration
-- Task success evaluation
-- Prompt injection defense through data
-- Safe tool design (no arbitrary code)
 
 ## License
 
