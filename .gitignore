@@ -1,0 +1,14 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+venv/
+.python-embed/
+.git-portable/
+get-pip.py
+results/charts/*.png
+results/traces.jsonl
+results/memory.json
+results/task_success.json
+results/injection_report.json
+!results/charts/.gitkeep
